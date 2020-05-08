@@ -1,0 +1,6 @@
+{
+  "name": "Athens self-contained",
+  "permissions": [
+    "https://raw.githubusercontent.com/athensresearch/athens/master/data/*"
+  ],
+}

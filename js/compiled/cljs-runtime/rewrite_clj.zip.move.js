@@ -6,48 +6,48 @@ goog.require('clojure.zip');
  * Move right to next non-whitespace/non-comment location.
  */
 rewrite_clj.zip.move.right = (function rewrite_clj$zip$move$right(zloc){
-var G__50144 = zloc;
-var G__50144__$1 = (((G__50144 == null))?null:clojure.zip.right(G__50144));
-if((G__50144__$1 == null)){
+var G__49679 = zloc;
+var G__49679__$1 = (((G__49679 == null))?null:clojure.zip.right(G__49679));
+if((G__49679__$1 == null)){
 return null;
 } else {
-return rewrite_clj.zip.whitespace.skip_whitespace.cljs$core$IFn$_invoke$arity$1(G__50144__$1);
+return rewrite_clj.zip.whitespace.skip_whitespace.cljs$core$IFn$_invoke$arity$1(G__49679__$1);
 }
 });
 /**
  * Move left to next non-whitespace/non-comment location.
  */
 rewrite_clj.zip.move.left = (function rewrite_clj$zip$move$left(zloc){
-var G__50145 = zloc;
-var G__50145__$1 = (((G__50145 == null))?null:clojure.zip.left(G__50145));
-if((G__50145__$1 == null)){
+var G__49681 = zloc;
+var G__49681__$1 = (((G__49681 == null))?null:clojure.zip.left(G__49681));
+if((G__49681__$1 == null)){
 return null;
 } else {
-return rewrite_clj.zip.whitespace.skip_whitespace_left(G__50145__$1);
+return rewrite_clj.zip.whitespace.skip_whitespace_left(G__49681__$1);
 }
 });
 /**
  * Move down to next non-whitespace/non-comment location.
  */
 rewrite_clj.zip.move.down = (function rewrite_clj$zip$move$down(zloc){
-var G__50147 = zloc;
-var G__50147__$1 = (((G__50147 == null))?null:clojure.zip.down(G__50147));
-if((G__50147__$1 == null)){
+var G__49684 = zloc;
+var G__49684__$1 = (((G__49684 == null))?null:clojure.zip.down(G__49684));
+if((G__49684__$1 == null)){
 return null;
 } else {
-return rewrite_clj.zip.whitespace.skip_whitespace.cljs$core$IFn$_invoke$arity$1(G__50147__$1);
+return rewrite_clj.zip.whitespace.skip_whitespace.cljs$core$IFn$_invoke$arity$1(G__49684__$1);
 }
 });
 /**
  * Move up to next non-whitespace/non-comment location.
  */
 rewrite_clj.zip.move.up = (function rewrite_clj$zip$move$up(zloc){
-var G__50148 = zloc;
-var G__50148__$1 = (((G__50148 == null))?null:clojure.zip.up(G__50148));
-if((G__50148__$1 == null)){
+var G__49701 = zloc;
+var G__49701__$1 = (((G__49701 == null))?null:clojure.zip.up(G__49701));
+if((G__49701__$1 == null)){
 return null;
 } else {
-return rewrite_clj.zip.whitespace.skip_whitespace_left(G__50148__$1);
+return rewrite_clj.zip.whitespace.skip_whitespace_left(G__49701__$1);
 }
 });
 /**
@@ -55,12 +55,12 @@ return rewrite_clj.zip.whitespace.skip_whitespace_left(G__50148__$1);
  */
 rewrite_clj.zip.move.next = (function rewrite_clj$zip$move$next(zloc){
 if(cljs.core.truth_(zloc)){
-var or__4185__auto__ = (function (){var G__50150 = zloc;
-var G__50150__$1 = (((G__50150 == null))?null:clojure.zip.next(G__50150));
-if((G__50150__$1 == null)){
+var or__4185__auto__ = (function (){var G__49707 = zloc;
+var G__49707__$1 = (((G__49707 == null))?null:clojure.zip.next(G__49707));
+if((G__49707__$1 == null)){
 return null;
 } else {
-return rewrite_clj.zip.whitespace.skip_whitespace.cljs$core$IFn$_invoke$arity$2(clojure.zip.next,G__50150__$1);
+return rewrite_clj.zip.whitespace.skip_whitespace.cljs$core$IFn$_invoke$arity$2(clojure.zip.next,G__49707__$1);
 }
 })();
 if(cljs.core.truth_(or__4185__auto__)){
@@ -106,36 +106,36 @@ return (rewrite_clj.zip.whitespace.skip_whitespace_left(clojure.zip.left(zloc)) 
  * Move to the next non-whitespace/non-comment location in a depth-first manner.
  */
 rewrite_clj.zip.move.prev = (function rewrite_clj$zip$move$prev(zloc){
-var G__50152 = zloc;
-var G__50152__$1 = (((G__50152 == null))?null:clojure.zip.prev(G__50152));
-if((G__50152__$1 == null)){
+var G__49713 = zloc;
+var G__49713__$1 = (((G__49713 == null))?null:clojure.zip.prev(G__49713));
+if((G__49713__$1 == null)){
 return null;
 } else {
-return rewrite_clj.zip.whitespace.skip_whitespace.cljs$core$IFn$_invoke$arity$2(clojure.zip.prev,G__50152__$1);
+return rewrite_clj.zip.whitespace.skip_whitespace.cljs$core$IFn$_invoke$arity$2(clojure.zip.prev,G__49713__$1);
 }
 });
 /**
  * Move to the leftmost non-whitespace/non-comment location.
  */
 rewrite_clj.zip.move.leftmost = (function rewrite_clj$zip$move$leftmost(zloc){
-var G__50153 = zloc;
-var G__50153__$1 = (((G__50153 == null))?null:clojure.zip.leftmost(G__50153));
-if((G__50153__$1 == null)){
+var G__49716 = zloc;
+var G__49716__$1 = (((G__49716 == null))?null:clojure.zip.leftmost(G__49716));
+if((G__49716__$1 == null)){
 return null;
 } else {
-return rewrite_clj.zip.whitespace.skip_whitespace.cljs$core$IFn$_invoke$arity$1(G__50153__$1);
+return rewrite_clj.zip.whitespace.skip_whitespace.cljs$core$IFn$_invoke$arity$1(G__49716__$1);
 }
 });
 /**
  * Move to the rightmost non-whitespace/non-comment location.
  */
 rewrite_clj.zip.move.rightmost = (function rewrite_clj$zip$move$rightmost(zloc){
-var G__50154 = zloc;
-var G__50154__$1 = (((G__50154 == null))?null:clojure.zip.rightmost(G__50154));
-if((G__50154__$1 == null)){
+var G__49719 = zloc;
+var G__49719__$1 = (((G__49719 == null))?null:clojure.zip.rightmost(G__49719));
+if((G__49719__$1 == null)){
 return null;
 } else {
-return rewrite_clj.zip.whitespace.skip_whitespace_left(G__50154__$1);
+return rewrite_clj.zip.whitespace.skip_whitespace_left(G__49719__$1);
 }
 });
 
